@@ -5,9 +5,10 @@ import math
 a, b = map(int, input().split())
 
 #calc x:
-x = ((a + b) / (1 + a))**1/5
-
-print(x)
+try:
+    x = ((a + b) / (1 + a))**1/5
+except TypeError:
+    print("b argument's probably too small")
 
 #calc z:
 z = math.exp((x - 1)**0.5)
