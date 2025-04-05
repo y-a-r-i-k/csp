@@ -7,7 +7,7 @@ text = "В этом тексте есть числа 123, 4567 и 89, а так�
 
 
 
-# def find_longest_digit_sequence(text):
+# def find_longest_digit_sequence(text: str) -> str:
 #     digit_sequences = re.findall(r'\d+', text) #Находим все последовательности цифр в тексте
     
 #     if digit_sequences:
@@ -17,7 +17,7 @@ text = "В этом тексте есть числа 123, 4567 и 89, а так�
 #         return None
 
 
-def find_longest_digit_sequence(text):
+def find_longest_digit_sequence(text: str) -> str:
     max_sequence = ""
     current_sequence = ""
 

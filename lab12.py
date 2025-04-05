@@ -8,7 +8,7 @@ text1 = "QWERTYUIOPLKHGFDSAZXCVBNM1234567890" #Тут точно больше с
 text2 = "AEIOUYBCD12387234"                   #Тут точно больше гласных
 text3 = "abce1234"                            #Кол-во равно
 
-def compare_items(text):
+def compare_items(text: str) -> None:
     number_vowels = sum(1 for x in text if x in vowels)
     number_others = sum(1 for x in text if x not in vowels)
     number_numbers = sum(1 for x in text if x in numbers)
