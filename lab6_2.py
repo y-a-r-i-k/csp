@@ -1,3 +1,5 @@
+#variant 1
+
 def main():
     s = 0 #sum
     for i in range(11):
