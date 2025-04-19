@@ -4,7 +4,7 @@
 Автор кода: Y-A-R-I-K (Yaroslav)
 '''
 
-from gcd import gcd
-from lcm import lcm
-from rev_number import reverse
-from sqrt import sqrt
+from .gcd import gcd
+from .lcm import lcm
+from .rev_number import reverse
+from .sqrt import sqrt
