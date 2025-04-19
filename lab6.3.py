@@ -1,5 +1,5 @@
 #variant 23
-
+                                                            
 def f(x):
     if x <= -2:
         return 8 / x
