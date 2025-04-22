@@ -121,7 +121,7 @@ class SalaryCalculatorApp:
             )
             self.result_label.config(text=result_text)
             
-        except ValueError as e:
+        except ValueError as e: #Выброс ошибки
             messagebox.showerror("Ошибка", str(e))
     
 
