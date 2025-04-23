@@ -6,8 +6,9 @@ a, b = map(int, input().split())
 
 #calc x:
 try:
-    x = ((a + b) / (1 + a))**1/5
-except TypeError:
+    x = math.pow((a + b) / (1 + a), 1/5)
+    
+except ZeroDivisionError:
     print("b argument's probably too small")
 
 #calc z:
