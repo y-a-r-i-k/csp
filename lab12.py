@@ -23,3 +23,5 @@ def compare_items(text: str) -> None:
 compare_items(text1)
 compare_items(text2)
 compare_items(text3)
+compare_items("ljsdhgljsdhgljsd1211")
+

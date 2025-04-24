@@ -5,11 +5,7 @@ import math
 a, b = map(int, input().split())
 
 #calc x:
-try:
-    x = math.pow((a + b) / (1 + a), 1/5)
-    
-except ZeroDivisionError:
-    print("b argument's probably too small")
+x = math.pow((a + b) / (1 + a), 1/5)  
 
 #calc z:
 z = math.exp((x - 1)**0.5)
