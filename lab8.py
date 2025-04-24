@@ -1,18 +1,18 @@
-def calculate_z(a):
+#v2
+def calc_z(a):
     if a < 4:
         z = 0.0
         for n in range(1, 11):  # 1..10
-            denominator = 1.0
+            d = 1.0
             a_n = 1.0 # a^n
             for _ in range(n):
                 a_n *= a
-            denominator = a_n - 5
-            term = (a * a) / denominator  
+            d = a_n - 5
+            term = (a * a) / d  
             z += term
     else:
         sum_part = 0.0
         for n in range(1, 9):  # 1..8
-            numerator = 1.0 
             a_n = 1.0   #a^n
             for _ in range(n):
                 a_n *= a
@@ -21,8 +21,12 @@ def calculate_z(a):
         z = ((a + 1) / a) * sum_part
     return z
 
-# Пример табулирования функции для a от 1 до 10 с шагом 1
-print("a\tZ(a)")
-for a in range(1, 11):
-    z = calculate_z(a)
-    print(f"{a}\t{z:.4f}")  # Вывод с округлением до 4 знаков после запятой
+x0 = float(input())
+xh = float(input())
+xn = float(input())
+
+x = x0
+while x <= xn:
+    z = calc_z(x)
+    print(f"{x}\t{z:.4f}")
+    x += xh
